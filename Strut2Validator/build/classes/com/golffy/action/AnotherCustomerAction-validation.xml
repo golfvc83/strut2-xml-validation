@@ -1,0 +1,21 @@
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.3//EN"
+	"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+	<field name="final">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>final1 required</message>
+		</field-validator>
+	</field>
+	<field name="final2">
+		<field-validator type="required">
+			<message>final2 required</message>
+		</field-validator>
+		<field-validator type="int">
+			<param name="min">1</param>
+			<param name="max">100</param>
+			<message key="errors.range"/>
+		</field-validator>
+	</field>
+	
+</validators>
